@@ -42,6 +42,7 @@ function detaille_categorie($content, $categorie){
 }
 
 function select_all_categories($f){
+// array_unique(<<colonne catégories>>) !
     $content = select_all($f);
     $categories = array();
     foreach($content as $ligne)
